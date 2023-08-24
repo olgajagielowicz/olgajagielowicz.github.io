@@ -17,7 +17,7 @@ function showWeather(data) {
     console.log(data);
     document.querySelector('.citi-name').innerHTML = data.name;
     document.querySelector('.temperatura').innerHTML = Math.round(data.main.temp) + '&deg';
-    document.querySelector('.icon').innerHTML = '<img src="weather-app.png">';
+    document.querySelector('.icon').innerHTML = '<img src="/weather_app/weather-app.png">';
     document.querySelector('.weather-description').innerHTML = data.weather[0]['description'][0].toUpperCase() + data.weather[0]['description'].slice(1);
     document.querySelector('.wind-deg').innerHTML = windDirection(data.wind.deg);
     document.querySelector('.wind-speed').innerHTML = `${data.wind.speed} km/h`;
