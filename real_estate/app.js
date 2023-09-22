@@ -6,12 +6,12 @@ const links = document.querySelector(".links");
 
 navToggle.addEventListener("click", function () {
     linksContainer.classList.toggle("show-links");
- 
+
 });
 // navbar
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
-// going up to top
+// arrow up to top
 window.addEventListener("scroll", function () {
     const scrollHeight = window.pageYOffset;
 
@@ -33,8 +33,6 @@ scrollLinks.forEach(function (link) {
         // navigate to specific spot
         const id = e.currentTarget.getAttribute("href").slice(1);
         const element = document.getElementById(id);
-        // calculate the heights
-        const navHeight = navbar.getBoundingClientRect().height;
 
         let position = element.offsetTop;
 
@@ -48,36 +46,36 @@ scrollLinks.forEach(function (link) {
 // *******************************************
 
 // select members
-const members = document.querySelectorAll("#team_member");
-let a = document.querySelector(".founder_member");
-a.querySelector('.social_contacts').style.visibility = 'visible';
+// const members = document.querySelectorAll("#team_member");
+// let a = document.querySelector(".founder_member");
+// a.querySelector('.social_contacts').style.display = 'flex';
 // change members properties
-members.forEach(function (member) {
-    member.addEventListener("mouseover", function (e) {
-        if (e.target != member) return;
-        let old_member = document.querySelector(".founder_member");
-        old_member.classList.remove("founder_member");
-        old_member.classList.add("member");
-        old_member.querySelector('img').classList.add("member_img");
-        old_member.querySelector('img').classList.remove("founder_img");
-        old_member.querySelector('.founder_name').classList.add("co_founder_name");
-        old_member.querySelector('.founder_name').classList.remove("founder_name");
-        old_member.querySelector('.founder_position').classList.add("position");
-        old_member.querySelector('.founder_position').classList.remove("founder_position");
-        old_member.querySelector('.social_contacts').style.visibility = 'hidden'; 
-        
-        let new_member = e.target
-        new_member.classList.remove("member");
-        new_member.classList.add("founder_member");
-        new_member.querySelector('img').classList.add("founder_img");
-        new_member.querySelector('img').classList.remove("member_img");
-        new_member.querySelector('.co_founder_name').classList.add("founder_name");
-        new_member.querySelector('.co_founder_name').classList.remove("co_founder_name");
-        new_member.querySelector('.position').classList.add("founder_position");
-        new_member.querySelector('.position').classList.remove("position");
-        new_member.querySelector('.social_contacts').style.visibility = 'visible';
-    });
-});
+// members.forEach(function (member) {
+//     member.addEventListener("mouseover", function (e) {
+//         if (e.target != member) return;
+//         let old_member = document.querySelector(".founder_member");
+//         old_member.classList.remove("founder_member");
+//         old_member.classList.add("member");
+//         old_member.querySelector('img').classList.add("member_img");
+//         old_member.querySelector('img').classList.remove("founder_img");
+//         old_member.querySelector('.founder_name').classList.add("co_founder_name");
+//         old_member.querySelector('.founder_name').classList.remove("founder_name");
+//         old_member.querySelector('.founder_position').classList.add("position");
+//         old_member.querySelector('.founder_position').classList.remove("founder_position");
+//         old_member.querySelector('.social_contacts').style.display = 'none';
+
+//         let new_member = e.target
+//         new_member.classList.remove("member");
+//         new_member.classList.add("founder_member");
+//         new_member.querySelector('img').classList.add("founder_img");
+//         new_member.querySelector('img').classList.remove("member_img");
+//         new_member.querySelector('.co_founder_name').classList.add("founder_name");
+//         new_member.querySelector('.co_founder_name').classList.remove("co_founder_name");
+//         new_member.querySelector('.position').classList.add("founder_position");
+//         new_member.querySelector('.position').classList.remove("position");
+//         new_member.querySelector('.social_contacts').style.display = 'flex';
+//     });
+// });
 
 // *******************************************
 
@@ -87,35 +85,35 @@ const reviews = [
         id: 1,
         name: 'Lorri Warf',
         job: 'UX Designer',
-        img: './real_estate/img/Profile.png',
+        img: './img/Profile.png',
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magnapharetra in amet porta enim.",
     },
     {
         id: 2,
         name: 'David Elson',
         job: 'Developer',
-        img: './real_estate/img/Profile (1).png',
+        img: './img/Profile (1).png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magnapharetra in amet porta enim.',
     },
     {
         id: 3,
         name: 'Ricky Smith',
         job: 'Developer',
-        img: './real_estate/img/Profile (2).png',
+        img: './img/Profile (2).png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magnapharetra in amet porta enim.',
     },
     {
         id: 4,
         name: 'Floyd Miles',
         job: 'Co-Founder',
-        img: './real_estate/img/Profile.png',
+        img: './img/Profile.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magnapharetra in amet porta enim.',
     },
     {
         id: 5,
         name: 'Kathryn Murphy',
         job: 'The Boss',
-        img: './real_estate/img/Profile (1).png',
+        img: './img/Profile (1).png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor non sit sed magnapharetra in amet porta enim.',
     },
 ];

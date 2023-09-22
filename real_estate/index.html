@@ -7,57 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Logoipsum</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/real_estate/main.css">
+    <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 </head>
 
 <body>
     <article>
         <header id="nav">
-            <nav>
-                <div class="head">
-                    <div class="nav-header">
-                        <img src="/real_estate/img/Logo.png" alt="Logoipsum">
-                        
-                    </div>
+            <div class="head">
+                <div class="nav-header">
+                    <a href="#">
+                        <img src="/img/Logo.png" alt="Logoipsum">
+                    </a>
+
+                </div>
+                <nav>
                     <div class="nav-con">
                         <div class="nav-btn">
                             <button class="nav-toggle">
                                 <i class="fas fa-bars"></i>
-                              </button>
+                            </button>
                         </div>
                         <div class="links-container">
-                        <ul class="links">
-                            <li><a href="#home.asp" class="scroll-link">Home</a></li>
-                            <li><a href="#about.asp" class="scroll-link">About</a></li>
-                            <li><a href="#property.asp" class="scroll-link">Property</a></li>
-                            <li><a href="#blog.asp" class="scroll-link">Blog</a></li>
-                            <li><a href="#contact.asp" class="scroll-link">Contact</a></li>
-                        </ul>
+                            <ul class="links">
+                                <li><a href="#home" class="scroll-link">Home</a></li>
+                                <li><a href="#about" class="scroll-link">About</a></li>
+                                <li><a href="#prop" class="scroll-link">Property</a></li>
+                                <li><a href="#blog" class="scroll-link">Blog</a></li>
+                                <li><a href="#contact" class="scroll-link">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    </div>
-                    
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
 
         <main>
-            
-            <article class="one" id="home.asp">
-                <img src="/real_estate/img/Hero.png" alt="" class="back_screen">
+
+            <article class="one" id="home">
+                <img src="/img/Hero.png" alt="" class="back_screen">
                 <div class="offer">
                     <span class="hr-sect font">
                         <hr>We are offering the
                     </span>
-                    <h2>best real estate deals</h2>
+                    <h1>best real estate deals</h1>
                     <p class="font">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                         officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     <button class="btn_one btn_font">More Details</button>
                 </div>
-                <div class="search">
+                <form class="search">
                     <div class="finder">
-                        <div id="find_font">Find Your Home</div>
-                        <img src="/real_estate/img/Search.png" alt="search_icon" class="icon">
+                        <input type="search" name="user" placeholder="Find Your Home" id="find_font"></input>
+                        <input type="image" src="/img/Search.png" alt="search_icon" class="icon" />
                     </div>
                     <div class="select-sect">
                         <div class="select_box">
@@ -65,7 +66,7 @@
                                 <option value="">Location</option>
                             </select>
                             <button class="arr_icon">
-                                <img src="/real_estate/img/Arrow-Down.png" alt="arr_icon1">
+                                <img src="/img/Arrow-Down.png" alt="arr_icon1">
                             </button>
                         </div>
                         <div class="select_box">
@@ -73,52 +74,50 @@
                                 <option value="">Category</option>
                             </select>
                             <button class="arr_icon">
-                                <img src="/real_estate/img/Arrow-Down.png" alt="arr_icon2">
+                                <img src="/img/Arrow-Down.png" alt="arr_icon2">
                             </button>
                         </div>
-                        <div class="select_box">
+                        <div class="select_box sel_type">
                             <select name="property" id="property">
                                 <option value="">Property Type</option>
                             </select>
                             <button class="arr_icon">
-                                <img src="/real_estate/img/Arrow-Down.png" alt="arr_icon3">
+                                <img src="/img/Arrow-Down.png" alt="arr_icon3">
                             </button>
                         </div>
-                        <form action="" class="sbt_btn"><input type="submit" value="Search" id="submit">
-                        </form>
-
+                        <input type="submit" value="Search" id="submit">
                     </div>
-                </div>
+                </form>
             </article>
 
-            <article class="two" id="about.asp">
+            <article class="two" id="about">
                 <div class="feature">
-                    <h3>Featured Properties</h3>
+                    <h2>Featured Properties</h2>
                     <p class="feature_font">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
                 </div>
                 <div class="proj_pic">
-                    <img src="/real_estate/img/Image 1.png" alt="" class="item-a">
-                    <img src="/real_estate/img/Image 2.png" alt="" class="item-b b_style">
+                    <img src="/img/Image 1.png" alt="" class="item-a">
+                    <img src="/img/Image 2.png" alt="" class="item-b b_style">
                     <div class="backstg">
                         <div class="proj_des">
-                            <h4 class="h4-font">New Property</h4>
+                            <h2 class="h2-font">New Property</h2>
                             <p class="font1">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet</p>
                             <button type="button" class="btn_icon">
-                                <img src="/real_estate/img/Icon only.png" alt="arrow-right">
+                                <img src="/img/Icon only.png" alt="arrow-right">
                             </button>
                         </div>
                     </div>
-                    <img src="/real_estate/img/Image 3.png" alt="" class="item-c">
-                    <img src="/real_estate/img/Image 4.png" alt="" class="item-d">
-                    <img src="/real_estate/img/Image 5.png" alt="" class="item-e">
+                    <img src="/img/Image 3.png" alt="" class="item-c">
+                    <img src="/img/Image 4.png" alt="" class="item-d">
+                    <img src="/img/Image 5.png" alt="" class="item-e">
                 </div>
             </article>
 
             <article class="three">
-                <div class="h3_con">
-                    <h3>Our Features</h3>
+                <div class="h2_con">
+                    <h2>Our Features</h2>
                 </div>
                 <div class="main_con">
                     <div>
@@ -142,14 +141,14 @@
                         </div>
                     </div>
                     <div class="img_con">
-                        <img src="/real_estate/img/Cover.png" alt="" class="cover">
+                        <img src="./img/Cover.png" alt="" class="cover">
                     </div>
                 </div>
             </article>
 
-            <article class="four" id="property.asp">
+            <article class="four" id="prop">
                 <div class="feature">
-                    <h3>Resent Properties</h3>
+                    <h2>Resent Properties</h2>
                     <p class="feature_font">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                         sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                         nostrud amet.</p>
@@ -157,7 +156,7 @@
                 <div class="main_box">
                     <div class="example">
                         <div class="img_des">
-                            <img src="/real_estate/img/Image 6.png" alt="">
+                            <img src="./img/Image 6.png" alt="">
                         </div>
                         <div class="des_descripe">
                             <span class="design_black">Interior Design</span>
@@ -186,71 +185,71 @@
                             <span class="price">$ 20,000/<span class="price_month">Month</span></span>
                         </div>
                         <div class="img_des">
-                            <img src="/real_estate/img/Image 7.png" alt="">
+                            <img src="./img/Image 7.png" alt="">
                         </div>
                     </div>
                 </div>
                 <button type="button" class="more_btn">View more</button>
             </article>
 
-            <article class="five" id="blog.asp">
+            <article class="five" id="blog">
                 <div class="feature5">
-                    <h3>Meet Our Teem</h3>
+                    <h2>Meet Our Teem</h2>
                     <p class="feature_font">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                         sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                         nostrud amet.</p>
                 </div>
                 <div class="team_members">
                     <div class="member" id="team_member">
-                        <img src="/real_estate/img/Avatar Mask.png" alt="" class="member_img">
+                        <img src="./img/Avatar Mask.png" alt="" class="member_img">
                         <div>
                             <span class="co_founder_name">Kathryn Murphy</span>
                             <p class="position">Co-Founder</p>
                         </div>
                         <div class="social_contacts">
-                            <a href="#"><img src="/real_estate/img/Facebook.png"></a>
-                            <a href="#"><img src="/real_estate/img/Instagram.png"></a>
-                            <a href="#"><img src="/real_estate/img/Linkedin.png"></a>
-                            <a href="#"><img src="/real_estate/img/Twitter.png"></a>
-                        </div>
-                    </div>
-                    <div class="founder_member" id="team_member">
-                        <img src="/real_estate/img/Avatar Mask (1).png" alt="" class="founder_img">
-                        <div>
-                            <span class="founder_name">Brooklyn Simmons</span>
-                            <p class="founder_position">Founder</p>
-                        </div>
-                        <div class="social_contacts">
-                            <a href="#"><img src="/real_estate/img/Facebook.png"></a>
-                            <a href="#"><img src="/real_estate/img/Instagram.png"></a>
-                            <a href="#"><img src="/real_estate/img/Linkedin.png"></a>
-                            <a href="#"><img src="/real_estate/img/Twitter.png"></a>
+                            <a href="#"><img src="./img/icons8-facebook.svg"></a>
+                            <a href="#"><img src="./img/icons8-instagram.svg"></a>
+                            <a href="#"><img src="./img/icons8-linkedin.svg"></a>
+                            <a href="#"><img src="./img/icons8-twitter.svg"></a>
                         </div>
                     </div>
                     <div class="member" id="team_member">
-                        <img src="/real_estate/img/Avatar Mask (2).png" alt="" class="member_img">
+                        <img src="./img/Avatar Mask (1).png" alt="" class="member_img">
+                        <div>
+                            <span class="co_founder_name">Brooklyn Simmons</span>
+                            <p class="position">Founder</p>
+                        </div>
+                        <div class="social_contacts">
+                            <a href="#"><img src="./img/icons8-facebook.svg"></a>
+                            <a href="#"><img src="./img/icons8-instagram.svg"></a>
+                            <a href="#"><img src="./img/icons8-linkedin.svg"></a>
+                            <a href="#"><img src="./img/icons8-twitter.svg"></a>
+                        </div>
+                    </div>
+                    <div class="member" id="team_member">
+                        <img src="./img/Avatar Mask (2).png" alt="" class="member_img">
                         <div>
                             <span class="co_founder_name">Floyd Miles</span>
                             <p class="position">Co-Founder</p>
                         </div>
                         <div class="social_contacts">
-                            <a href="#"><img src="/real_estate/img/Facebook.png"></a>
-                            <a href="#"><img src="/real_estate/img/Instagram.png"></a>
-                            <a href="#"><img src="/real_estate/img/Linkedin.png"></a>
-                            <a href="#"><img src="/real_estate/img/Twitter.png"></a>
+                            <a href="#"><img src="./img/icons8-facebook.svg"></a>
+                            <a href="#"><img src="./img/icons8-instagram.svg"></a>
+                            <a href="#"><img src="./img/icons8-linkedin.svg"></a>
+                            <a href="#"><img src="./img/icons8-twitter.svg"></a>
                         </div>
                     </div>
                     <div class="member" id="team_member">
-                        <img src="/real_estate/img/Avatar Mask (3).png" alt="" class="member_img">
+                        <img src="./img/Avatar Mask (3).png" alt="" class="member_img">
                         <div>
                             <span class="co_founder_name">Ronald Richards</span>
                             <p class="position">Co-Founder</p>
                         </div>
                         <div class="social_contacts">
-                            <a href="#"><img src="/real_estate/img/Facebook.png"></a>
-                            <a href="#"><img src="/real_estate/img/Instagram.png"></a>
-                            <a href="#"><img src="/real_estate/img/Linkedin.png"></a>
-                            <a href="#"><img src="/real_estate/img/Twitter.png"></a>
+                            <a href="#"><img src="./img/icons8-facebook.svg"></a>
+                            <a href="#"><img src="./img/icons8-instagram.svg"></a>
+                            <a href="#"><img src="./img/icons8-linkedin.svg"></a>
+                            <a href="#"><img src="./img/icons8-twitter.svg"></a>
                         </div>
                     </div>
                 </div>
@@ -258,78 +257,81 @@
 
             <article class="six">
                 <div class="feature6">
-                    <h3>Our Clients Speak</h3>
+                    <h2>Our Clients Speak</h2>
                     <p class="feature_font">We have been working with clients around the world</p>
                 </div>
                 <div class="clients">
                     <div class="clients_bond">
-                    <div class="client_">
-                        <div class="opinion_box">
-                            <img src="/real_estate/img/Quote Mark.png" alt="" id="client_quotemark">
-                            <div class="client_opinion">
-                                <span class="client_title">Professional Partner</span>
-                                <p class="client_des" id="info-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                                    non sit sed magna
-                                    pharetra in amet porta enim.</p>
+                        <div class="client_">
+                            <div class="opinion_box">
+                                <img src="./img/Quote Mark.png" alt="" id="client_quotemark">
+                                <div class="client_opinion">
+                                    <span class="client_title">Professional Partner</span>
+                                    <p class="client_des" id="info-left">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Auctor
+                                        non sit sed magna
+                                        pharetra in amet porta enim.</p>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img src="./img/Profile.png" alt="" id="person-img-left">
+                                <div>
+                                    <span class="client_name" id="author-left">Lorri Warf</span>
+                                    <p class="client_position" id="job-left">UX Designer</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="profile">
-                            <img src="/real_estate/img/Profile.png" alt="" id="person-img-left">
-                            <div>
-                                <span class="client_name" id="author-left">Lorri Warf</span>
-                                <p class="client_position" id="job-left">UX Designer</p>
+                        <div class="client_">
+                            <div class="opinion_box">
+                                <img src="./img/Quote Mark.png" alt="" id="client_quotemark">
+                                <div class="client_opinion">
+                                    <span class="client_title">Incredible Experience</span>
+                                    <p class="client_des" id="info-center">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Auctor
+                                        non sit sed magna
+                                        pharetra in amet porta enim.</p>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img src="./img/Profile (1).png" alt="" id="person-img-center">
+                                <div>
+                                    <span class="client_name" id="author-center">David Elson</span>
+                                    <p class="client_position" id="job-center">Developer</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="client_">
-                        <div class="opinion_box">
-                            <img src="/real_estate/img/Quote Mark.png" alt="" id="client_quotemark">
-                            <div class="client_opinion">
-                                <span class="client_title">Incredible Experience</span>
-                                <p class="client_des" id="info-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                                    non sit sed magna
-                                    pharetra in amet porta enim.</p>
+                        <div class="client_">
+                            <div class="opinion_box">
+                                <img src="./img/Quote Mark.png" alt="" id="client_quotemark">
+                                <div class="client_opinion">
+                                    <span class="client_title">Dependable & Responsive</span>
+                                    <p class="client_des" id="info-right">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Auctor
+                                        non sit sed magna
+                                        pharetra in amet porta enim.</p>
+                                </div>
+                            </div>
+                            <div class="profile">
+                                <img src="./img/Profile (2).png" alt="" id="person-img-right">
+                                <div>
+                                    <span class="client_name" id="author-right">Ricky Smith</span>
+                                    <p class="client_position" id="job-right">Developer</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="profile">
-                            <img src="/real_estate/img/Profile (1).png" alt="" id="person-img-center">
-                            <div>
-                                <span class="client_name" id="author-center">David Elson</span>
-                                <p class="client_position" id="job-center">Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="client_">
-                        <div class="opinion_box">
-                            <img src="/real_estate/img/Quote Mark.png" alt="" id="client_quotemark">
-                            <div class="client_opinion">
-                                <span class="client_title">Dependable & Responsive</span>
-                                <p class="client_des" id="info-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                                    non sit sed magna
-                                    pharetra in amet porta enim.</p>
-                            </div>
-                        </div>
-                        <div class="profile">
-                            <img src="/real_estate/img/Profile (2).png" alt="" id="person-img-right">
-                            <div>
-                                <span class="client_name" id="author-right">Ricky Smith</span>
-                                <p class="client_position" id="job-right">Developer</p>
-                            </div>
-                        </div>
-                    </div>
                     </div>
                     <div class="dots">
                         <button type="button" id="outlined_dots" class="prev-btn-spec">
-                            <img src="/real_estate/img/Outlined.png">
-                            <img src="/real_estate/img/Dot.png" alt="cover_img" class="prev_dot_img">
+                            <img src="./img/Outlined.png">
+                            <div class="prev_dot_img"></div>
                         </button>
                         <button type="button" id="outlined_dots" class="center-btn-spec">
-                            <img src="/real_estate/img/Outlined.png">
-                            <img src="/real_estate/img/Dot.png" alt="cover_img" class="active_dot">
+                            <img src="./img/Outlined.png">
+                            <div class="active_dot"></div>
                         </button>
                         <button type="button" id="outlined_dots" class="next-btn-spec">
-                            <img src="/real_estate/img/Outlined.png">
-                            <img src="/real_estate/img/Dot.png" alt="cover_img" class="next_dot_img">
+                            <img src="./img/Outlined.png">
+                            <div class="next_dot_img"></div>
                         </button>
                     </div>
                 </div>
@@ -343,21 +345,23 @@
                     </div>
                     <div class="newsletter">
                         <div class="request_des">
-                            <h4 id="color_font">Don’t Miss A Thing!</h4>
+                            <h2 id="color_font">Don’t Miss A Thing!</h2>
                             <p class="font">Subscribe with Email and loads of interesting news will be sent to you on a
                                 daily basis.</p>
                         </div>
-                        <div class="send_request">
+                        <form class="send_request">
                             <input type="text" placeholder="Your email here" class="email_input"></input>
                             <button type="button" class="sub_btn">Subscribe</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </article>
 
-            <article class="eight" id="contact.asp">
+            <article class="eight" id="contact">
                 <div class="logo_description">
-                    <img src="/real_estate/img/Logo_footer.png" alt="">
+                    <a href="#">
+                        <img src="./img/Logo_footer.png" alt="">
+                    </a>
                     <div>
                         <p class="logodes_font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -366,14 +370,14 @@
                     <div class="footer_title_font">Recent Properties</div>
                     <div class="prop_main_box">
                         <div class="prop_box">
-                            <img src="/real_estate/img/Cover_property1.png" alt="" class="photoprop">
+                            <img src="./img/Cover_property1.png" alt="" class="photoprop">
                             <div class="prop_description">
                                 <p class="developer_info">2972 Westheimer Rd. Santa Ana, Illinois 85486.</p>
                                 <span class="prop_price">$ 20,000</span>
                             </div>
                         </div>
                         <div class="prop_box">
-                            <img src="/real_estate/img/Cover_property.png" alt="" class="photoprop">
+                            <img src="./img/Cover_property.png" alt="" class="photoprop">
                             <div class="prop_description">
                                 <p class="developer_info">2972 Westheimer Rd. Santa Ana, Illinois 85486.</p>
                                 <span class="prop_price">$ 28,000</span>
@@ -387,20 +391,23 @@
                         <div>
                             <p class="developer_info">2972 Westheimer Rd. Santa Ana, Illinois 85486.</p>
                         </div>
-                        <div class="contact_info">
-                            <p class="developer_info"><span class="media_color">Phone:</span> (239) 555-0108</p>
-                            <p class="developer_info"><span class="media_color">Email:</span> abcd@domain.com</p>
-                            <p class="developer_info"><span class="media_color">Website:</span> abcd@domain.in</p>
-                        </div>
+                        <address class="contact_info">
+                            <p class="developer_info"><span class="media_color">Phone:</span><a class="contact_color"
+                                    href="tel:(239) 555-0108">(239) 555-0108</a></p>
+                            <p class="developer_info"><span class="media_color">Email:</span><a class="contact_color"
+                                    href="mailto:abcd@domain.com">abcd@domain.com</a></p>
+                            <p class="developer_info"><span class="media_color">Website:</span><a class="contact_color"
+                                    href="#">abcd@domain.in</a></p>
+                        </address>
                     </div>
                 </div>
             </article>
         </main>
     </article>
     <!-- back to top button -->
-  <a href="#home.asp" class="bounce top-link">
-    <i class="fas fa-arrow-up"></i>
-  </a>
+    <a href="#home" class="bounce top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="app.js"></script>
 </body>
