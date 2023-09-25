@@ -500,30 +500,22 @@ h2 {
 
 .item-a {
     grid-area: a;
-    margin: 0 auto;
 }
 
 .item-b {
     grid-area: b;
-    margin: 0 auto;
-
 }
 
 .item-c {
     grid-area: c;
-    margin: 0 auto;
 }
 
 .item-d {
     grid-area: d;
-    margin: 0 auto;
-
 }
 
 .item-e {
     grid-area: e;
-    margin: 0 auto;
-
 }
 
 .proj_pic {
@@ -540,15 +532,67 @@ h2 {
         "a d e";
 }
 
-.b_style {
+.item-a {
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.5));
+    height: 562px;
+    width: auto;
+    background-size: cover;
+    color: white;
     border-radius: 6px;
+}
+
+.item-b,
+.item-c,
+.item-d,
+.item-e {
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.5));
+    height: 265px;
+    width: auto;
+    background-size: cover;
+    color: white;
+    border-radius: 6px;
+}
+
+.a_img {
+    grid-row: span 2;
 }
 
 .backstg {
     position: absolute;
-    display: flex;
     justify-content: center;
     width: 100%;
+    display: none;
+}
+
+.a_img,
+.b_img,
+.c_img,
+.d_img,
+.e_img {
+    display: grid;
+    justify-items: center;
+}
+
+.a_img:hover>div {
+    display: flex;
+}
+
+.b_img:hover>div {
+    display: flex;
+}
+
+.c_img:hover>div {
+    display: flex;
+}
+
+.d_img:hover>div {
+    display: flex;
+}
+
+.e_img:hover>div {
+    display: flex;
 }
 
 .proj_des {
@@ -558,7 +602,7 @@ h2 {
     justify-content: center;
     row-gap: 4px;
     margin-top: 55px;
-    width: 22%;
+    width: 82%;
     text-align: center;
 }
 
@@ -603,7 +647,7 @@ h2 {
     .item-c,
     .item-d,
     .item-e {
-        width: 80%
+        width: 80%;
     }
 }
 
@@ -621,17 +665,6 @@ h2 {
             "e";
     }
 
-    .backstg {
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -40%);
-    }
-
-    .proj_des {
-        margin-top: 25px;
-        width: 48%;
-    }
-
     .btn_icon {
         margin: 20px auto;
     }
@@ -647,15 +680,6 @@ h2 {
             "a b"
             "a c"
             "d e";
-    }
-
-    .backstg {
-        justify-content: flex-end;
-        width: 82%;
-    }
-
-    .proj_des {
-        width: 30%;
     }
 }
 
@@ -1614,7 +1638,7 @@ h2 {
     .eight {
         display: flex;
         column-gap: 20px;
-        padding: 0px 20px;
+        padding: 0px 20px 20px 20px;
     }
 
     .logo_description {
@@ -1622,16 +1646,11 @@ h2 {
     }
 
     .logo_description img {
-        width: 100%;
         margin-bottom: 24px;
     }
 
     .logo_description div {
         width: 100%;
-    }
-
-    .photoprop {
-        width: 80%;
     }
 }
 
